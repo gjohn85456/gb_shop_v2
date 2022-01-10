@@ -1,0 +1,44 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Mens Packable Down Puffer Jacket",
+    "img_product": "img/imgCard-1.png",
+    "price": 7500,
+    "description": "WARM FEATURES: 100% down feather padding giving the ability to lock in warmth Featuring a quilted pattern to add style and functionality."
+  },
+  {
+    "id_product": 2,
+    "product_name": "Party Suit",
+    "img_product": "img/imgCard-2.png",
+    "price": 6500,
+    "description": "You will look gorgeous in this elegant woman tuxedo with peak lapels. he fully lined, flat-front pants with straight side pockets and front zipper creates a classic tuxedo suit for all occasions."
+  },
+  {
+    "id_product": 3,
+    "product_name": "Mens Fashion Hoodies",
+    "img_product": "img/imgCard-3.png",
+    "price": 4700,
+    "description": "This Mens Hoodie is perfect for both machine washing and hand washing. Feature:High Quality,Short Sleeves,Soft,Breathable,Avoid Shrinkage,Printing,Solid Color."
+  },
+  {
+    "id_product": 4,
+    "product_name": "Men's Slim-Fit Slub Crew T-Shirt",
+    "img_product": "img/imgCard-4.png",
+    "price": 2400,
+    "description": "This classic slim-fit T-shirt features raglan sleeves and is perfect for sports or casual everydaywear. Everyday made better: we listen to customer feedback and fine-tune every detail to ensure quality, fit, and comfort."
+  },
+  {
+    "id_product": 5,
+    "product_name": "Blue jacket",
+    "img_product": "img/imgCard-5.png",
+    "price": 5100,
+    "description": "You will look gorgeous in this beautiful ladies blue suit with peak lapels. Wear it from office to party and pair it with different accessories for each occasion."
+  },
+  {
+    "id_product": 6,
+    "product_name": "Green Filafil Shirt",
+    "img_product": "img/imgCard-6.png",
+    "price": 3100,
+    "description": "Refined womens' business dress shirt. Relaxed Fit: Our most generous fit sits farthest from the body Crafted with a very special fabric that lends a fun, preppy vibe to any look."
+  }
+]

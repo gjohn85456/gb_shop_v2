@@ -1,0 +1,119 @@
+$black: #222222;
+$grey: #B1B1B1;
+$pink:#F16D7F;
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.form-control_size {
+    height: 44px;
+    margin-top: 20px;
+    width: 359px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $grey;
+}
+
+.cartSecondPartTop_text {
+    &>p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+.form-label_size {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+}
+
+.form-check_margin {
+    margin-top: 31px;
+}
+
+#main-content {
+    margin-top: 64px;
+    margin-bottom: 96px;
+}
+
+.mainRegistration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // padding-left: 16px;
+    // padding-right: 16px;
+    .mainRegistration_leftPart {
+        display: flex;
+        flex-direction: column;
+        &_loginDetails {
+            margin-top: 30px;
+        }
+        &>p {
+            font-size: 13px;
+            line-height: 16px;
+            color: $grey;
+            width: 360px;
+            margin-top: 15px;
+        }
+        &_button {
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            background: $pink;
+            text-decoration: none;
+            width: 167px;
+            display: flex;
+            margin-top: 39px;
+            justify-content: space-evenly;
+        }
+    }
+    .mainRegistration_RightPart {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        font-style: normal;
+        font-weight: 300;
+        @media(max-width: 768px) {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        @media(max-width: 768px) {
+            margin-top: 40px;
+        }
+        &>h2 {
+            padding-bottom: 22px;
+            @media(max-width: 768px) {
+                padding-bottom: 32px;
+            }
+        }
+        &>p {
+            width: 652px;
+            padding-bottom: 21px;
+            @media(max-width: 768px) {
+                width: 354px;
+            }
+        }
+        &>ul {
+            list-style-image: url(img/imgForLiRegistration.png);
+            &>li {
+                padding-bottom: 16px;
+                padding-left: 20px;
+            }
+            &>li:nth-child(2) {
+                width: 311px;
+            }
+        }
+    }
+}
+
+.animation:hover {
+    transition: 1s;
+    transform: scale(1.1, 1.1);
+}

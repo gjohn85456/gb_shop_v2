@@ -1,0 +1,22 @@
+{
+    "amount": 14000,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 1,
+            "product_name": "Mens Packable Down Puffer Jacket",
+            "img_product": "img/imgCard-1.png",
+            "price": 7500,
+            "description": "WARM FEATURES: 100% down feather padding giving the ability to lock in warmth Featuring a quilted pattern to add style and functionality."
+        },
+        {
+            "quantity": 1,
+            "id_product": 2,
+            "product_name": "Party Suit",
+            "img_product": "img/imgCard-2.png",
+            "price": 6500,
+            "description": "You will look gorgeous in this elegant woman tuxedo with peak lapels. he fully lined, flat-front pants with straight side pockets and front zipper creates a classic tuxedo suit for all occasions."
+        }
+    ]
+}

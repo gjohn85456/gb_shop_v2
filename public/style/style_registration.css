@@ -1,0 +1,156 @@
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control_size {
+  height: 44px;
+  margin-top: 20px;
+  width: 359px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.cartSecondPartTop_text > p {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.form-label_size {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.form-check_margin {
+  margin-top: 31px;
+}
+
+#main-content {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.mainRegistration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainRegistration .mainRegistration_leftPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainRegistration .mainRegistration_leftPart_loginDetails {
+  margin-top: 30px;
+}
+
+.mainRegistration .mainRegistration_leftPart > p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  width: 360px;
+  margin-top: 15px;
+}
+
+.mainRegistration .mainRegistration_leftPart_button {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background: #F16D7F;
+  text-decoration: none;
+  width: 167px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 39px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mainRegistration .mainRegistration_RightPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .mainRegistration .mainRegistration_RightPart {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainRegistration .mainRegistration_RightPart {
+    margin-top: 40px;
+  }
+}
+
+.mainRegistration .mainRegistration_RightPart > h2 {
+  padding-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+  .mainRegistration .mainRegistration_RightPart > h2 {
+    padding-bottom: 32px;
+  }
+}
+
+.mainRegistration .mainRegistration_RightPart > p {
+  width: 652px;
+  padding-bottom: 21px;
+}
+
+@media (max-width: 768px) {
+  .mainRegistration .mainRegistration_RightPart > p {
+    width: 354px;
+  }
+}
+
+.mainRegistration .mainRegistration_RightPart > ul {
+  list-style-image: url(img/imgForLiRegistration.png);
+}
+
+.mainRegistration .mainRegistration_RightPart > ul > li {
+  padding-bottom: 16px;
+  padding-left: 20px;
+}
+
+.mainRegistration .mainRegistration_RightPart > ul > li:nth-child(2) {
+  width: 311px;
+}
+
+.animation:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+/*# sourceMappingURL=style_registration.css.map */

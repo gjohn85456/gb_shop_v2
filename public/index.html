@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evgeniy_Shop2</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_catalog_for_men.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- TOP -->
+        <header class="top ">
+            <nav class="b-menu b-menu_background">
+                <div class="b-menu__content b-menu__content_adaptive container">
+                    <div class="b-menu__leftPart">
+                        <a href="index.html"><img src="img/LogoTop.svg" alt="logo" class="b-menu__logo"></a>
+                        <search ref="search"></search>
+                        <!-- <form action="#" class="search" @submit.prevent="$parent.$refs.products.filter(userSearch)">
+                            <input type="text" class="search_field" v-model="userSearch">
+                            <button class="search_btn" type="submit"></button>
+                        </form> -->
+                        <!-- <a href="#"><img src="img/magnifierTop.svg" alt="magnifier" class="b-menu__magnifier"></a> -->
+                    </div>
+                    <div class="b-menu__rightPart">
+                        <a href="#"><img src="img/menuTop.svg" alt="menu" class="b-menu__miniMenu"></a>
+                        <a href="#"><img src="img/logInTop.svg" alt="logIn" class="b-menu__LogIn"></a>
+                        <cart ref="cart"></cart>
+                        <!-- <div class="b-cart">
+                            <button class="b-cart__btn" type="button" @click="showCart= !showCart"></button>
+                            <div class="b-cart__form" v-show="showCart">
+                                <p class="b-cart__form__content b-cart__text" v-if="!cartItems.length">
+                                    Пусто
+                                </p>
+                                <div class="b-cart__form__content" v-if="cartItems.length">
+                                <cartitem v-for="item of cart_items" :key="item.id" :img="item.img" :cartitem="item">
+                                </cartitem>
+                            </div>
+                            </div>
+                        </div> -->
+
+
+                        <!-- <span class="bay b-menu__cart">
+                        <a href="cart.html"><img src="img/ShoppingBasketTop.svg" alt="ShoppingBasket"
+                                class="b-menu__cartLogo"></a>
+                        <span class="b-menu__itemInCart">5</span>
+                    </span> -->
+                    </div>
+                </div>
+            </nav>
+
+            <div class="secondPartTopBackground ">
+                <div class="secondPartTop">
+                    <img src="img/manTop.png" alt="manTop" class="manTop_img">
+                    <div class="lableBrend">
+                        <div class="lableBrend_rectangle"></div>
+                        <div class="lableBrend_text">
+                            <p>THE BRAND</p>
+                            <p>OF LUXERIOUS <span>FASHION</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow hidden">
+                    <div class="menuBrand">
+                        <img src="img/imgCloseIndex.png" alt="imgCloseIndex" class="closeIndex_img">
+                        <div class=" menuBrand_heading ">
+                            Menu
+                        </div>
+                        <div class="menuBrand_part ">
+                            <p>MAN</p>
+                            <a href="# ">Accessories</a>
+                            <a href="# ">Bags</a>
+                            <a href="# ">Denim</a>
+                            <a href="# ">T-Shirts</a>
+                        </div>
+
+                        <div class="menuBrand_part ">
+                            <p>WOMAN</p>
+                            <a href="# ">Accessories</a>
+                            <a href="# ">Jackets & Coats</a>
+                            <a href="# ">Polos</a>
+                            <a href="# ">T-Shirts</a>
+                            <a href="# ">Shirts</a>
+                        </div>
+
+                        <div class="menuBrand_part ">
+                            <p>KIDS</p>
+                            <a href="# ">Accessories</a>
+                            <a href="# ">Jackets & Coats</a>
+                            <a href="# ">Polos</a>
+                            <a href="# ">T-Shirts</a>
+                            <a href="# ">Shirts</a>
+                            <a href="# ">Bags</a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- MainCatalog -->
+        <main>
+            <div class=" mainCatalog container ">
+                <div class="forWomen ">
+                    <img src="img/forWomen.png " alt="forWomen " class="forWomen_img ">
+                    <a href="product.html " class="second_img "><img src="img/secongImgForWomen.png "
+                            alt="secondImgForWomen "></a>
+                </div>
+                <div class="forMen ">
+                    <img src="img/forMen.jpg " alt="forMen " class="forMen_img">
+                    <a href="catalog_for_men.html " class="second_img "><img src="img/secondImgForMen.png "
+                            alt="secondImgForMen "></a>
+                </div>
+                <div class="forKids ">
+                    <img src="img/forKids.jpg " alt="forKids" class="forKids_img">
+                    <a href="# " class="second_img "><img src="img/secondImgForKids.png " alt="secondImgForKids "></a>
+                </div>
+                <div class="accesories ">
+                    <img src="img/Accesories.jpg " alt="accesories " class="accesories_img">
+                    <a href="# " class="second_img "><img src="img/secondImgAccesories.png "
+                            alt="secondImgAccesories "></a>
+                </div>
+            </div>
+
+
+            <!-- Fetured Items -->
+            <div class="futuredItems container ">
+                <div class="head ">
+                    <h1 class="headingFeturedItems ">Fetured Items</h1>
+                    <p class="descriptionHeadingFeturedItems ">Shop for items based on what we featured in this week</p>
+                </div>
+
+                <products ref="products"></products>
+                <!-- 
+            <div class="b-catalog b-catalog_adaptive">
+                <div class="b-card ">
+                    <img src="img/imgCard-1.png " alt="imgCard-1">
+                    <div class="b-card__container ">
+                        <h3 class="b-card__heading ">Product1</h3>
+                        <p class="b-card__text">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="b-card__price">$10.00</p>
+                    </div>
+                </div>
+                <div class="b-card ">
+                    <img src="img/imgCard-2.png " alt="imgCard-2 ">
+                    <div class="b-card__container ">
+                        <h3 class="b-card__heading ">Product2</h3>
+                        <p class="b-card__text ">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="b-card__price">$10.50</p>
+                    </div>
+                </div>
+                <div class="b-card ">
+                    <img src="img/imgCard-3.png " alt="imgCard-3 ">
+                    <div class="b-card__container ">
+                        <h3 class="b-card__heading ">Product3</h3>
+                        <p class="b-card__text ">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="b-card__price ">$20.00</p>
+                    </div>
+                </div>
+                <div class="b-card ">
+                    <img src="img/imgCard-4.png " alt="imgCard-4 ">
+                    <div class="b-card__container ">
+                        <h3 class="b-card__heading ">Product4</h3>
+                        <p class="b-card__text ">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="b-card__price ">$30.50</p>
+                    </div>
+                </div>
+                <div class="b-card ">
+                    <img src="img/imgCard-5.png " alt="imgCard-5 ">
+                    <div class="b-card__container ">
+                        <h3 class="b-card__heading ">Product5</h3>
+                        <p class="b-card__text ">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="b-card__price ">$40.00</p>
+                    </div>
+                </div>
+                <div class="b-card ">
+                    <img src="img/imgCard-6.png " alt="imgCard-6 ">
+                    <div class="b-card__container ">
+                        <h3 class="b-card__heading ">Product6</h3>
+                        <p class="b-card__text ">Known for her sculptural takes on traditional tailoring, Australian arbiter
+                            of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="b-card__price ">$55.55</p>
+                    </div>
+                </div>
+    
+            </div>
+     -->
+                <div class="conainerMainCatalogButton ">
+                    <a href="product.html" class="mainCatalogButton ">Browse All Product</a>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer ">
+            <div class="firstPartFooter container ">
+                <div class="deliverSalseQuality ">
+                    <img src="img/imgDelivery.svg " alt="imgDelivery " class="Delivery_img ">
+                    <h4 class="headingfirstPartFooter ">Free Delivery</h4>
+                    <p class="textfirstPartFooter ">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov
+                        tion with extensive models.</p>
+                </div>
+                <div class="deliverSalseQuality ">
+                    <img src="img/imgSales.svg " alt="imgSales " class="Sales_img">
+                    <h4 class="headingfirstPartFooter ">Sales & discounts</h4>
+                    <p class="textfirstPartFooter ">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov
+                        tion with extensive models.</p>
+                </div>
+                <div class="deliverSalseQuality ">
+                    <img src="img/imgQuality.svg " alt="imgQuality" class="Quality_img">
+                    <h4 class="headingfirstPartFooter ">Quality assurance</h4>
+                    <p class="textfirstPartFooter ">Worldwide delivery on all. Authorit tively morph next-generation
+                        innov
+                        tion with extensive models.</p>
+                </div>
+
+            </div>
+            <div class="secondPartFooterBackground">
+                <div class="container secondPartFooter">
+                    <div class="faceSecondPartFooter">
+                        <img src="img/imgSecondPartFace.png " alt="imgSecondPartFace" class="secondPartFace_img">
+                        <p class="textSecondPartFace ">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                            <span class="italic ">a pulvinar purus condimentum“</span>
+                        </p>
+                    </div>
+                    <div class="subscribeSecondPartFooter ">
+                        <p class="textSubscribeSecondPartFooter "><span class="textBold ">SUBSCRIBE</span><br> FOR OUR
+                            NEWLETTER AND PROMOTION</p>
+                        <form action="#" class="subscribe" id="form_subscribe">
+                            <input class="subscribe__field" type="text" placeholder="Enter Your Name" name="name"
+                                id="name">
+                            <input class="subscribe__field subscribe_margin-top" type="tel"
+                                placeholder="Enter Your Phone" name="phone" id="phone">
+                            <input class="subscribe__field subscribe_margin-top" type="email "
+                                placeholder="Enter Your Email" name="email" id="email">
+                            <button id="subscribe-btn" class="subscribe__btn" type="submit">
+                                subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="thirdPartFooter container ">
+                <p class="textCopyRight ">© 2021 Brand All Rights Reserved.</p>
+                <div class="socialNetwork ">
+                    <a href="# "><img src="img/imgFacebook.png " alt="imgFacebook "></a>
+                    <a href="# "><img src="img/imgInstagramPink.svg " alt="imgInstagram "></a>
+                    <a href="# "><img src="img/imgP.png " alt="imgP "></a>
+                    <a href="# "><img src="img/imgTwitter.png " alt="imgTwitter "></a>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="JS/vueComp_Product.js"></script>
+    <script src="JS/vueComp_Cart.js"></script>
+    <script src="JS/vueComp_Search.js"></script>
+    <script src="JS/vueMain.js"></script>
+    <script src="JS/validator.js"></script>
+    <!-- <script src="JS/app.js"></script> -->
+    <!-- <script src="index_js.js"></script> -->
+</body>
+
+</html>

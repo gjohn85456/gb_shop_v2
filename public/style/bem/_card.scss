@@ -1,0 +1,51 @@
+.b-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &__container {
+        padding: 25px 16px 20px 16px;
+        background: #F8F8F8;
+    }
+    &__heading {
+        font-size: 13px;
+        line-height: 17px;
+        color: #000000;
+        padding-bottom: 12px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        padding-bottom: 18px;
+    }
+    &__price {
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+    }
+    &__bay{
+        display: flex;  
+        align-items: center;      
+        justify-content: center;
+        position: absolute;
+        width: 360px;
+        height: 420px;
+        background: rgba(58, 56, 56, 0.86);
+        // &_show {
+        //     display: flex;
+        // }
+        
+        
+    }
+    &__btn {
+        width: 139px;
+        height: 44px;
+        background: url(/img/Add_to_cart.png) no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        //border: 3px red;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

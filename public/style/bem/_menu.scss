@@ -1,0 +1,68 @@
+.b-menu {
+    position:fixed;
+    width: 100%;
+    z-index: 5;
+    &_background {
+        background: #222222;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+        box-sizing: border-box;        
+    }
+    &__content_adaptive {
+        @media(max-width: 768px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        @media(max-width: 375px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+    }
+    &__logo{
+        padding-right: 41px;
+    }
+    &__rightPart {
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+    }
+    &__miniMenu{
+        padding-right: 33px;
+    }
+    &__LogIn {
+        padding-right: 33px;
+        @media(max-width: 376px){
+            display: none;
+        }
+    }
+    &__cart {
+        position: relative;
+        @media(max-width: 376px) {
+            display: none;
+        }
+    }
+    &__itemInCart {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        color: white;
+        background: #f16d7f;
+        border-radius: 50%;
+        position: absolute;
+        text-align: center;
+        right: -8px;
+        top: -19px;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        line-height: 19px;  
+    }
+    
+
+
+}
